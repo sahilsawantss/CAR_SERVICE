@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<link rel="stylesheet" href="css/offer.css" />
+<link rel="stylesheet" href="admin.css" />
+
+<script language="javascript">
+  function valid()
+  {
+    var sname1=document.getElementById("sname").value;
+	var descri1=document.getElementById("descri").value;
+	var cost1=document.getElementById("cost").value;
+	
+	if(sname1=="")
+	{
+	  alert("Enter Your Service Name...");
+	  document.getElementById("sname").focus();
+	  return false;
+	 }
+	 if(descri1=="")
+	{
+	  alert("Enter Your Description...");
+	  document.getElementById("descri").focus();
+	  return false;
+	 }
+	 if(cost1=="")
+	{
+	  alert("Enter Your Cost...");
+	  document.getElementById("cost1").focus();
+	  return false;
+	 }
+	 
+	return true;
+   }
+	
+</script>
+</head>
+
+<body>
+	<div class="nav_bar">
+		<h1><font color="#000033">Car<span>Servicing</span></h1>
+		<nav>
+			<ul>
+				<li><a href="Vservices.html">Services</a></li>
+				<li><a href="offer.html">Offer</a></li>	
+				<li><a href="Views.html">Views</a></li>	
+				<li><a href="index.html">Logout</a></li>	
+			   
+				
+			  </ul>
+		  </nav>
+		</div>
+
+   <div class="title">
+       <h1><i>SERVICES</i></h1>
+   </div>
+   <div class="box">
+   <center>
+   <form method="post" action="sadd.php">
+     <b><input type="name" name="sname" id="sname" class="form-control" Placeholder="Enter Service Name" required /><br /></b>
+	 <b><input type="text" name="descri" id="descri" class="form-control" Placeholder="Enter Service Description" required /><br /></b>
+	 <b><input type="no" name="cost" id="cost" class="form-control" Placeholder="Enter Cost" required /><br /></b>
+	<b><input type="submit" class="submit" name="Submit" onclick="return valid();" class="form-control submit" value="Submit"  /></b>&nbsp;&nbsp;&nbsp;
+	<b><input type="reset" class="submit" name="Reset" class="form-control submit" value="Reset"  /></b>
+
+	<!-- <b><button type="button" class="submit" name="Back" onclick="history.back()" class="form-control submit" value="Back"/></b>
+	<button onclick="history.back()">Go Back</button>-->
+	
+	
+	  <b><a href="adminhome.php"> BACK </a></b
+   </form>
+   </center>
+   </div>
+</body>
+</html>

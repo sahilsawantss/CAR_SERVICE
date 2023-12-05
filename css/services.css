@@ -1,0 +1,160 @@
+/* CSS Document */
+body{
+  margin:0;
+  padding:0;
+  font-family:sans-serif;
+}
+.landing{
+  width:100%;
+  height:100vh;
+  /*background-image:url(../img/c3.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;*/
+}
+.nav_bar{
+    width:100%;
+	height:70px;
+	background:#fff;
+	box-shadow: 1px 10px 30px rgba(0,0,0,0.1);
+}
+.nav_bar h1{
+   margin:0;
+   padding:0;
+   color:#E6E6E6;
+   text-transform:uppercase;
+   line-height:70px;
+   float:left;
+   margin-left:80px;
+   
+}
+.nav_bar h1 span{
+   color:#F68E13;
+}
+.nav_bar nav{
+   float:right;
+   margin-right:50px;
+   
+}
+.nav_bar nav ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+  
+}
+.nav_bar nav ul li{
+  display:inline-block;
+}
+.nav_bar nav ul li .active{
+   color:#F68E13;
+}
+.nav_bar nav ul li a{
+  line-height:70px;
+  text-transform:uppercase;
+  padding: 0 30px;
+  display:block;
+  text-decoration:none;
+  color:#000; 
+  transition:.4s;
+  
+}
+.nav_bar nav ul li a:hover{
+    color:#F68E13;
+	transition:.4s;
+}
+nav ul li button 
+{
+ font-size:18px;
+ color:#000000;
+ outline:none;
+ border:none;
+ background:transparent;
+ cursor:pointer;
+ font-family:sans-serif;
+}
+nav ul li button:hover
+{
+ color:#FF6600;
+ }
+*
+{
+margin:0;
+padding:0;
+font-family:"montserrat",sans-serif;
+box-sizing:border-box;
+}
+.services-section
+{
+/*background-image:url(../img/b.jpg);*/
+background-color:#ddd;
+
+background-size:cover;
+padding:60px 0;
+}
+.inner-width{
+width:100%;
+max-width:1200px;
+margin:auto;
+padding:0 20px;
+overflow:hidden;
+}
+.section-title
+{
+text-align:center;
+color:#009900;
+text-transform:uppercase;
+font-size:30px;
+}
+.border
+{
+ width:160px;
+ height:2px;
+ background:#FF6600;
+ margin:10px auto;
+}
+.services-container
+{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+.service-title{
+font-weight:bold;
+color:#FF0033;
+font-size:18px;
+ text-transform:uppercase;
+ margin-bottom:10px;
+}
+.service-box{
+max-width:33.33%;
+padding:10px;
+text-align:center;
+color:#000000;
+cursor:pointer;
+
+}
+.service-icon{
+display:inline-block;
+width:80px;
+height:70px;
+border:3px solid #000000;
+color:#82ccdd;
+/*transform:rotate(45deg);*/
+
+margin-bottom:30px;
+margin-top:16px;
+}
+/*.service-icon i
+{
+ line-height:70px;
+ transform:rotate(-45deg);
+ font-size:26px;
+
+}*/
+.service-box:hover .service-icon{
+background:#82ccdd;
+color:#ddd;
+}
+
+.service-desc{
+font-size:14px;
+}

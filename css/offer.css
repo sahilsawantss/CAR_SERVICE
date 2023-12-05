@@ -1,0 +1,47 @@
+/* CSS Document */
+body{
+  background-color:#CCCCCC;
+  }
+.title{
+  margin-top:100px;
+  color:#000000;
+  text-align:center
+  }
+.title h1{
+  font-size:36px;
+  line-height:10px;
+  }
+
+form{
+  margin-top:50px;
+}
+.form-control{
+  width:600px;
+  background:transparent;
+  border:none;
+  outline:none;
+  border-bottom:1px solid gray;
+  color:#000000;
+  font-size:18px;
+  margin-bottom:16px;
+}
+input{ 
+  height:45px;
+}
+form .submit{
+  background-color:#ff5722;
+  background-color:transparent;
+  color:#000000;
+  font-size:20px;
+  letter-spacing:2px;
+  height:30px;
+  margin-top:20px;
+  transition:0.4s ease;
+ }
+form .submit:hover{
+  background-color:#666666;
+  cursor:pointer;
+ }
+::placeholder{
+  color:#999999;
+  }

@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Contact</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="css/contact.css" />
+
+<script language="javascript">
+  function valid()
+  {
+    var fname1=document.getElementById("fname").value;
+	var lname1=document.getElementById("lname").value;
+	var email1=document.getElementById("email").value;
+	var mobile1=document.getElementById("mobile").value;
+	var feedback1=document.getElementById("feedback").value;
+	if(fname1=="")
+	{
+	  alert("Enter Your First Name...");
+	  document.getElementById("fname").focus();
+	  return false;
+	 }
+	 if(lname1=="")
+	{
+	  alert("Enter Your Last Name...");
+	  document.getElementById("lname").focus();
+	  return false;
+	 }
+	 if(email1=="")
+	{
+	  alert("Enter Your Email...");
+	  document.getElementById("email").focus();
+	  return false;
+	 }
+	 if(mobile1=="")
+	{
+	  alert("Enter Your Mobile No...");
+	  document.getElementById("mobile").focus();
+	  return false;
+	 }
+	 if(feedback1=="")
+	{
+	  alert("Enter Your Feedback...");
+	  document.getElementById("feedback").focus();
+	  return false;
+	 }
+	return true;
+   }
+
+
+
+	
+</script>
+
+</head>
+
+<body>
+<section class="landing">
+	    <div class="nav_bar">
+		   <h1><font color="#000033">Car</font><span>Servicing</span></h1>
+		   <nav>
+	           <ul>
+	               <li><a href="index.html" class="active">Home</a></li>
+				   <li><a href="about.html">About</a></li>	
+				   <li><a href="services.html">Services</a></li>	
+				   <li><a href="gallery.html">Gallery</a></li>	
+				   <li><a href="contact.html">Contact</a></li>
+				   
+				 </ul>
+			 </nav>
+	       </div>
+   
+	   <h2 class="h2" >CONTACT</h2>
+	  
+	   <div class="one">
+	   <ul >
+		   <li>
+			<br />
+			<br />
+			  <span><i class="material-icons"> add_location</i></span>
+			 
+			  <span>Maharudra Plaza,<br />
+			  Rajarampuri 13th line,<br />
+			  Near Swami Pani Purvtha,<br />
+			  Kolhapur - 416008<br />
+				 </span>
+		   </li><br />
+		   <li>
+	          <span><i class="material-icons">email</i></span>
+			  <span>tyson@gmail.com</span>
+		   </li><br />
+		   <li>
+			  <span><i class="material-icons">call</i></span>
+			  <span>+91 9511948311</span>
+		   </li>
+		</ul>
+	</div>
+	
+	<div class="two">
+	    <h2>Send a Feedback</h2>
+		   <form action="add.php" method="post" name="form1">
+		   <table>
+		   <tr>
+			  <th> <label>First Name</label></th>
+			   <td><input type="text" name="fname" id="fname" required /></td>
+			</tr>   
+		    <tr><br />
+	
+		      <th> <label>Last Name</label></th>
+			  <td> <input type="text" name="lname" id="lname" required /></td>
+			 </tr>
+		     <tr>
+		      <th> <label>Email </label></th>
+		      <td> <input type="email" name="email" id="email" required /></td>
+			   </tr>
+		   <tr>
+		       <th><label>Mobile Number</label></th>
+		       <td><input type="text" name="mobile" id="mobile" required /></td>
+		       
+		   </tr>
+		   <tr>
+		       <th><label>Write your feedback here...</label></th>
+	           <td><textarea name="feedback" id="feedback" required ></textarea></td>
+		       
+		  </tr>
+		   <tr>
+		      <td colspan="2"><input type="submit" value="Send" name="Send" onclick="return valid();" class="btn" /></td>
+			 </tr> 
+			 </table>
+		 </form>
+	</div>
+	 
+	  
+
+
+</body>
+</html>
